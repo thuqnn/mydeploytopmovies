@@ -1,0 +1,17 @@
+<div *ngIf="movie" class="show-info">
+    <h2>{{movie.name | uppercase}} Imdb</h2>
+    <div><span>id: </span>{{movie.id}}</div>
+    <div>
+        <p>{{movie.description}}</p>
+    </div>
+    <div>
+        <img [src]="movie.img" alt="{{movie.name}}"></div>
+    <div>
+        <label>
+            Edit Name: <input [(ngModel)]=" movie.name " placeholder="name "/> <br>
+            Edit Description: <input [(ngModel)]="movie.description " placeholder="description "/>
+        </label>
+    </div>
+    <button (click)="goBack() ">Go Back</button>
+    <button (click)="save() ">save</button>
+</div>
