@@ -1,7 +1,13 @@
 <h1>{{title}}</h1>
 
-<nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/movies">List Movies</a>
-</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <nav>
+                <a routerLink="/dashboard" class="dashboard">Dashboard</a>
+                <a routerLink="/movies" class="listmovies">List Movies</a>
+            </nav>
+        </div>
+    </div>
+</div>
 <router-outlet></router-outlet>
